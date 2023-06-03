@@ -1,0 +1,19 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #7
+Full Name  : Alex Chu
+Student ID#: 153954219
+Email      : kchu30@myseneca.ca
+Section    : NJJ
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1. By using structures in this WS, it is much more convenient to design the data collection set, and more efficient to manage the data/ information. It is like having a well structured database to store data especially in arrays. I created PlayerInfo and GameInfo struct in the header, make all the codes tidier without a lot of variable declaration which could be confusing.
+
+2. To enable to keep a history of games played including the endgame results, the first logical change is that we must create another struct so that we can swap and store the details in that struct as a "History data". The second change would be the structure of the iteration and logic selection, identify the entry point of the "Continue game".
+
+3. This workshop is really complicated and challenging. It must be well structured otherwise it would end in an incompleted mess. The parts of bomb and treasure placement really hurts my brain and spent me a lot of time to think of how to set the variables to make it very flexible but not hard coding, also it took me a lot of time to think of how to utilize the struct and arrays. The most time spending part is the Display of board, especially line 2. Line 3 and 4 was a little tricky too. However, everything was good, after I keep trying and debugging I resolved the problems.

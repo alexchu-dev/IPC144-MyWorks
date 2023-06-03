@@ -1,0 +1,35 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #5
+Full Name  : Alex Chu
+Student ID#: 153954219
+Email      : kchu30@myseneca.ca
+Section    : NJJ
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+1. There are two ways to map the month integer value to the first three characters, the first one is IF ELSE statement, which I have always used. The second one is SWITCH statement, which I can utilize in this workshop.
+Example of IF ELSE case (Simple version, not need to declare CHAR variable):
+if (month = 1)
+	printf("%d-JAN-%d",year,day);
+	...
+Example of SWITCH case:
+switch (month)
+{
+	case 1:
+		printf("JAN");
+		break;
+	case 2:
+		printf("FEB");
+		break;
+	...}
+	
+2. The 3 iterations are WHILE, DO WHILE and FOR loops. I used DO WHILE for my iterations, and NESTED a FOR + DO WHILE for the 2nd iteration. Using DO WHILE matches the case, which can perform the command once, then by reading input or doing calculations to flag the loop and define if the loop breaks or continues. In my case, I initially declared the flag = 1, only if the user input correctly then flag = 0 to end the DO WHILE loop.
+
+3. I usually do Black Box Test and White Box Test to check for errors. Data driven to compare input output, I compile my codes and look into the Output panel to debug accordingly, which gives me hints of all my syntactic errors such as missing semi-colons, wrong variable names etc.
+For semantic errors, it is a bit more difficult to find out because we usually can run the program but without expected output, e.g. iteration does not work or infinite. I would check the highlight colors in Visual Studio for hints, and do White Box Test to check through the flow if there is any problem.
+
+To debug the code, I use the VS IDE to compile and debug. I check the output errors then tackle the problems. We can also use Linux and enable the gcc and gdb modules to compile and debug.

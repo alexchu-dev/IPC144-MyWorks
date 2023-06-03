@@ -1,0 +1,23 @@
+*****************************************************************************
+                              Reflection
+                          Workshop - #2 (P2)
+Full Name  : Alex Chu
+Student ID#: 153954219
+Email      : kchu30@myseneca.ca
+Section    : NJJ
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+1. If we change %.15lf to %.16lf we will see that 10.12 becomes 10.1199999999999992 so as 1010 and 1015. According to IEEE standards, these happening are because of the 32-bit limitation and truncated if the numbers are too long. Since numbers are originally binary in computer, decimal numbers are more complicated and stored as power/log of 2. 10.12 stored in float as 10.11999988555908203125 having a binary of 01000001001000011110101110000101.
+
+2.	int newBalance;
+	newBalance = 32351;
+	printf("$50 bill %3d %9.4lf\n", (newBalance/100) / 50, (double)(newBalance%5000)/100);
+	printf("$20 bill %3d %9.4lf\n", ((int)(newBalance%5000)/100)/20, ((double)(newBalance % 5000) / 100)-20* (((int)(newBalance % 5000) / 100) / 20));
+	..
+	return 0;
+	
+3.	use /100.0 , (float) and (double), and e.g. 7245/100 ="72"dollars and 7245%100 ="45"cents

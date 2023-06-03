@@ -1,0 +1,16 @@
+*****************************************************************************
+                              Reflection
+                             Workshop - #1
+Full Name  : Alex Chu
+Student ID#: 153954219
+Email      : kchu30@myseneca.ca
+Section    : NJJ
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+1. I have learnt some basic C language such as the reason of using "include" and "stdio.h", printf, some special characters and compiled in VS, also learnt some basic SSH commands to make directories, change directories, list directories, and use "gcc" to compile C files on server side.
+2. SSH is a Secure Shell Protocol to establish secured connections from user to networks and servers. I have used Putty, a SSH client to connect to Matrix and send commands lines.
+3. SFTP is a Secure File Transfer Protocol which provides secured and private connections rather than FTP. I have used WinSCP, a GUI client which provides SFTP functions to send files.

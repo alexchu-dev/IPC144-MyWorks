@@ -1,0 +1,99 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #4
+Full Name  : Alex Chu
+Student ID#: 153954219
+Email      : kchu30@myseneca.ca
+Section    : NJJ
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1. "Selection" is the most extremely core component in programming, especially when we expected interaction or decision making in a batch of codes which answers are not fixed. Without selection and just sequence and iteration, it could be just a top to bottom flow which the answer must be exact to proceed forward, which true and false cannot be defined. 
+
+/*********** Use my codes which includes  if + else if + else if as an example below: ***********/
+	printf("Pick some APPLES... how many did you pick? : ");
+	scanf("%d", &applePicks);
+		 if (applePicks <= 0)
+			printf("ERROR: You must pick at least 1!\n");
+		else if (applePicks > appleNeeds)
+			printf("You picked too many... only %d more APPLE(S) are needed.\n", appleNeeds);
+		else if (applePicks < appleNeeds && applePicks > 0) {
+			appleNeeds = appleNeeds - applePicks;
+			printf("Looks like we still need some APPLES...\n");
+	...
+/*********** Use my codes as an example below: ***********/
+
+The first IF, is to check if the number is a valid positive input to avoid errors. Although this simple line cannot avoid user input characters, but it limits the user to input a positive quantity to  proceed further. Zero is not allowed because this is limited in the previous codes.
+
+The ELSE IF, allows me to check if it is a reasonable input, which if user input a greater number than the required quantity, it will prompt a response to ask the user to do it again.
+
+The next ELSE IF, allows me to do some computation for another condition, which if the user give a position input and the picks quantity is still less than required, to prompt the user to add more.
+
+The above mentioned includes 3 examples, but just in case if this is count as one example, here is another example I used in the very beginning:
+	if (appleNeeds < 0)
+        printf("ERROR: Value must be 0 or more.\n");
+This 2 lines prompts an error to input positive numbers or zero(if they don't require this fruit), which can guide the user come back on track and give an appropriate input.
+
+Without these if else selection, Decision won't be able to make.
+
+
+2. Nested Contructs, has a meaning as its name, enclosing a logic construct within another like a nesting structure.
+
+The first example I have used nested constructs in my codes is a DO WHILE in the main DO WHILE. Code as below:
+
+/*********** Nested Interation ***********/
+ do {
+        printf("Grocery Shopping\n================\n");
+        //Ask for input for 5 fruits
+        do {
+            printf("How many APPLES do you need? : ");
+            scanf("%d", &appleNeeds);
+            if (appleNeeds < 0)
+                printf("ERROR: Value must be 0 or more.\n");
+        } while (appleNeeds < 0);
+		... 
+		...
+        printf("All the items are picked!\n\n");
+        printf("Do another shopping? (0=NO): ");
+        scanf("%d", &shopAgain);
+        printf("\n");
+} while (shopAgain != 0);
+/*********** 		End		 ***********/	
+
+The above is a logic which first I ask user to input quantity of 5 fruits, it makes a loop to start asking user to input correctly either a positive number or a zero, then it will be looping and only proceed to next case when it is a greater than or equal to zero number. The rest of the codes can be ignored, until the last line while (shopAgain != 0) which actually gives a condition to respond to the user input to do another shopping or not. If the user input 1, then it will continue this "DO" loop from the start again. This is called a Nested Interation which one iteration is inside of the other iteration.
+
+The second example is a nested selection, which is an IF ELSE inside another IF ELSE:
+
+/*********** Nested Selection ***********/
+ while (cabbageNeeds > 0) {
+            printf("Pick some CABBAGES... how many did you pick? : ");
+            scanf("%d", &cabbagePicks);
+            if (cabbagePicks <= 0)
+                printf("ERROR: You must pick at least 1!\n");
+            else if (cabbagePicks > 0) {
+				if(cabbagePicks > cabbageNeeds)
+					printf("You picked too many... only %d more CABBAGE(S) are needed.\n", cabbageNeeds);
+				else if (cabbagePicks < cabbageNeeds) {
+					cabbageNeeds = cabbageNeeds - cabbagePicks;
+					printf("Looks like we still need some CABBAGES...\n");
+				}
+				else if (cabbagePicks == cabbageNeeds) {
+                cabbageNeeds = cabbageNeeds - cabbagePicks;
+                printf("Great, that's the cabbagees done!\n\n");
+				}
+			}
+			}
+/*********** 		End		 ***********/
+The above is a logic to first give a condition responding to the user input, if it is a zero or negative input then the user has to input again because the fruit required (Needs) is not zero. Then, when the condition become positive, it makes a decision to check if the pick quantity satisfies the required quantity then it comes to an end of this part and proceed, if pick is less or more than the required, it will prompt accordingly.
+
+3. I like both WHILE, DO WHILE and FOR loops which I can use in different situations. My favourite iteration in this workshop is a do while loop, which I can do certain steps before starting the loop as required.
+
+If I use WHILE loop instead of DO WHILE, I have to pre-assign a value to the loop variable and construct the code in another way. DO WHILE makes my codes easier and tidier and I can check the conditions after executing the statements.
+
+If I use FOR loop instead of DO WHILE, it seems doesn't make sense to me because I want to exit the controlled loop after I get a certain condition, however, for loop is an entry controlled loop.
+
+In my answer in question 2 above, I read the shopAgain input from user to see if it should be continued, and pass it to the WHILE at the end to decide if it is being continued of not. It is easy and straight forward to me.

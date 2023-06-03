@@ -1,0 +1,57 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #8
+Full Name  : Alex Chu
+Student ID#: 153954219
+Email      : kchu30@myseneca.ca
+Section    : NJJ
+
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1. int*3 = 6 bytes, double*6 = 48 bytes = total 54 bytes for the ReportData structure. A better way to handle this, is to pass by address instead of the whole struct, because pointers are only 4 bytes each which is 36 bytes in total.
+
+2. We can try to use two structs as arguments while calling functions, and not to repeat the variables which CatFoodInfo already have so it won't duplicate. Second, we can combine them as one at the beginning so we don't need to use two of them. Third, we can also use only the CatFoodInfo and apply functions to convert the values and output in the iteration, so that we don't have to store every value after we calculate every one of them. As long as they are dependant on each other, applying the equations of the functions would work.
+So I would either do this:
+struct CatFoodInfo {
+	int sku;
+	double prodPrice;
+	int calories;
+	double prodWeight;
+};
+struct ReportData {
+	double prodWeightKg;
+	int prodWeightG;
+	double totalServing;
+	double costPerServing;
+	double costCalPerServing;
+};
+
+Or this:
+
+struct CatFoodInfo {
+	int sku;
+	double prodPrice;
+	int calories;
+	double prodWeight;
+	double prodWeightKg;
+	int prodWeightG;
+	double totalServing;
+	double costPerServing;
+	double costCalPerServing;
+};
+
+Or this only and apply equations accordingly for every place holder:
+
+struct CatFoodInfo {
+	int sku;
+	double prodPrice;
+	int calories;
+	double prodWeight;
+};
+
+Then, the printf can be... printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf", re3.sku, re3.prodPrice, re3.prodWeight, convertLbsKg(re3.prodWeight), convertLbsG(re3.prodWeight), re3.calories,calculateServings(GRAM_SERVING, re3.prodWeightG,&tS), calculateCostPerServing(&re3.prodPrice,&re3.totalServing,&cPS), calculateCostPerCal(&re3.prodPrice,&calPS,&cCPS);.

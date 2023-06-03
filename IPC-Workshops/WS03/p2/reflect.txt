@@ -1,0 +1,19 @@
+*****************************************************************************
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Alex Chu
+Student ID#: 153954219
+Email      : kchu30@myseneca.ca
+Section    : NJJ
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+1. I personally do not find very difficult expression, however, for the logical expression goes together with relational expression e.g. (product3Type == 'l') || (product3Type == 'L') could be confusing, sometime syntax error would occur such as single equal or double equal, also shall the || and && be in the bracket or outside the bracket which depends on different situations.
+
+2. /**** To implement "deMorgan's Law" I have written my code as following:****/
+	else if (!(coffeeStrength == 'm') && !(coffeeStrength == 'M')) //if the input of coffeeStrength is not m and M, it becomes !(0) && !(0) which is 1 in the else if condition. It will give the same result if we change it to (!((coffeeStrength == 'm') || (coffeeStrength == 'M'))) after applied the deMorgan's law to convert the expressions.
+	
+3.	The averagePrice variable has shorten and tidier, it could be easier to manage and modify. Meanwhile, the convertion of Celsius to Fehrenheit better not to create variables otherwise it would be the multiple of products hence 3 more variables in this cases which would spend more memories in the programme. I agree to this approach as this is some common practice in programming.

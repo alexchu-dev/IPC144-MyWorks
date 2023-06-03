@@ -1,0 +1,19 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #6
+Full Name  : Alex Chu
+Student ID#: 153954219
+Email      : kchu30@myseneca.ca
+Section    : NJJ
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+1. I set variables such as cost, priority, finance and also the flag for finance in parallel arrays, i.e. double cost[MAX]; int priority[MAX]; char finance[MAX]; int financeFlag[MAX] = { 0 }. I have defined a macro for the maximum arrays number with index [MAX]. At the Item Details part, I used a for loop to start the array, groups and stores each set of different data mentioned above for every index (i.e. from 0 to the user's input minus 1) accordingly.
+
+2. Setting iterator to 0 (i.e. i=0 instead of i=1) is a convention because computing always use 0 base, such as index starts from 0. It became a common practice and standard because it is easier for programmers and maintainer to read. If we set to something else such as i=1, it would confuse the reader and make them think why it would be 1 instead of 0.
+
+3. Array is a series of data of same type stores together, and each one has an unique index number. For example, a boy has a lot of toys and we catagorise them from toy cars 1 to 10, toy dolls 1 to 10, and also they have different colours like car 1 is red, car 2 is blue etc. We use array to store these information so that it will be easier for us to group them or find them, or make use of the information. After we have made use of the array, we can easily find out what kind of toys the boy has, for example I can see from the array there are a lot of toy cars already, I can plan to buy him a lego next may be!
