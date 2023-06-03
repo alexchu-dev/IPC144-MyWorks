@@ -1,18 +1,3 @@
-# IPC-Workshops
-
-## **Grade Breakdown:**
-
-| Workshop  | Term Value(%)   |
-| :-:       | :-:             |
-|    1      |         0.75%   |
-|    2      |         0.75%   |
-|    3      |         0.75%   |
-|    4      |         1.50%   |
-|    5      |         1.50%   |
-|    6      |         2.25%   |
-|    7      |         3.00%   |
-|    8      |         4.50%   |
-| **Total** |      **15.00%** |
 # Workshop # 3
 
 #### Worth: 0.75% of final grade
